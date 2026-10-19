@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="12 νόστιμες συνταγές με κοτόπουλο στο Airfryer. Εύκολες ιδέες για κάθε μέρα, τώρα μόνο 5€.">
+  <title>12 Συνταγές με Κοτόπουλο στο Airfryer | Netcraft Studio</title>
+  <style>
+    :root{--green:#073b2b;--green2:#0b5139;--gold:#c58a22;--cream:#fffaf0;--ink:#1e2924;--muted:#65716a}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff}
+    .topbar{background:var(--green);color:#fff;text-align:center;padding:10px 16px;font-size:14px;letter-spacing:.2px}
+    header{max-width:1120px;margin:auto;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;gap:15px}
+    .brand{font-weight:800;color:var(--green);letter-spacing:.4px;font-size:18px}
+    .brand small{display:block;font-weight:400;font-size:11px;color:var(--muted);margin-top:4px}
+    .navcta{background:var(--gold);color:#fff;text-decoration:none;font-weight:800;padding:12px 18px;border-radius:8px}
+    .hero{background:linear-gradient(120deg,#fffaf0 0%,#f5efdf 100%);padding:44px 22px 52px}
+    .hero-inner{max-width:1120px;margin:auto;display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+    .eyebrow{color:var(--green2);font-weight:800;text-transform:uppercase;letter-spacing:1.8px;font-size:12px}
+    h1{font-size:clamp(38px,5vw,62px);line-height:1.04;margin:14px 0 18px;color:var(--green);letter-spacing:-1.7px}
+    h1 span{color:var(--gold)}
+    .lead{font-size:19px;line-height:1.65;color:#435149;max-width:560px}
+    .ticks{list-style:none;padding:0;margin:24px 0;display:grid;gap:11px}
+    .ticks li:before{content:"✓";font-weight:900;color:var(--green2);margin-right:10px}
+    .price-row{display:flex;align-items:center;gap:13px;flex-wrap:wrap;margin:24px 0 18px}
+    .old{font-size:22px;color:#7b827d;text-decoration:line-through}
+    .new{font-size:42px;font-weight:900;color:var(--green)}
+    .discount{background:#f8df9b;color:#5b3c00;border-radius:30px;padding:7px 12px;font-size:13px;font-weight:800}
+    .buy{display:inline-flex;justify-content:center;align-items:center;background:var(--green);color:#fff;text-decoration:none;font-size:18px;font-weight:800;padding:17px 25px;border-radius:10px;box-shadow:0 8px 20px #073b2b24;transition:.2s}
+    .buy:hover{background:var(--green2);transform:translateY(-1px)}
+    .micro{font-size:12px;color:var(--muted);margin-top:12px;line-height:1.5}
+    .cover-wrap{position:relative;max-width:470px;margin:auto}
+    .cover{display:block;width:100%;height:auto;border-radius:14px;box-shadow:0 22px 50px #18291e30}
+    .cover-note{position:absolute;bottom:18px;left:-18px;background:#fff;border:1px solid #eadbb7;border-radius:12px;padding:13px 16px;font-weight:800;color:var(--green);box-shadow:0 8px 25px #00000012}
+    section{padding:68px 22px}
+    .container{max-width:1050px;margin:auto}
+    .center{text-align:center}
+    h2{font-size:clamp(28px,4vw,40px);line-height:1.15;color:var(--green);margin:0 0 15px}
+    .section-lead{font-size:17px;line-height:1.7;color:var(--muted);max-width:700px;margin:0 auto 34px}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .feature{padding:25px 22px;border:1px solid #e9eee9;border-radius:14px;background:#fff}
+    .feature .icon{font-size:30px;margin-bottom:12px}
+    .feature h3{color:var(--green);margin:0 0 9px;font-size:18px}
+    .feature p{margin:0;color:var(--muted);line-height:1.6;font-size:15px}
+    .recipes{background:var(--cream)}
+    .recipe-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px 24px;max-width:850px;margin:0 auto;text-align:left}
+    .recipe{background:#fff;border:1px solid #eee4cf;border-radius:10px;padding:14px 16px;line-height:1.45}
+    .recipe strong{color:var(--green);margin-right:8px}
+    .offer{background:var(--green);color:#fff;text-align:center;padding:58px 22px}
+    .offer h2{color:#fff}
+    .offer p{color:#e4eee8;max-width:650px;margin:0 auto 18px;line-height:1.7}
+    .offer .new{color:#ffe0a0}
+    .offer .old{color:#c2d0c8}
+    .offer .buy{background:var(--gold);color:#1e2b22}
+    .faq{max-width:800px;margin:auto;text-align:left}
+    details{border-bottom:1px solid #e6eae6;padding:18px 0}
+    summary{font-weight:800;color:var(--green);cursor:pointer}
+    details p{color:var(--muted);line-height:1.65}
+    footer{background:#f7f8f5;padding:25px 22px;text-align:center;color:var(--muted);font-size:13px;line-height:1.7}
+    footer strong{color:var(--green)}
+    @media(max-width:760px){header{padding:15px 17px}.hero{padding:30px 18px 42px}.hero-inner{grid-template-columns:1fr;gap:32px}.cover-wrap{max-width:360px}.cover-note{left:-6px;bottom:12px}.features{grid-template-columns:1fr}.recipe-grid{grid-template-columns:1fr}section{padding:50px 18px}.navcta{padding:10px 12px;font-size:13px}h1{letter-spacing:-1px}}
+  </style>
+</head>
+<body>
+  <div class="topbar">🎉 ΕΙΔΙΚΗ ΠΡΟΣΦΟΡΑ: Το ebook τώρα μόνο 5€ αντί για 10€</div>
+  <header>
+    <div class="brand">Netcraft Studio<small>Ιδέες που γίνονται αποτελέσματα</small></div>
+    <a class="navcta" href="#agora">Απόκτησέ το · 5€</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <div class="eyebrow">Το ψηφιακό βιβλίο συνταγών σου</div>
+          <h1>12 συνταγές με <span>κοτόπουλο</span> στο Airfryer</h1>
+          <p class="lead">Νόστιμες ιδέες, απλά υλικά και εύκολες οδηγίες βήμα-βήμα για να ετοιμάζεις διαφορετικά γεύματα κάθε μέρα.</p>
+          <ul class="ticks">
+            <li>12 διαφορετικές συνταγές με κοτόπουλο</li>
+            <li>Οδηγίες μαγειρέματος βήμα-βήμα</li>
+            <li>Ιδέες για καθημερινά γεύματα με λιγότερο λάδι</li>
+            <li>Ψηφιακό ebook σε PDF</li>
+          </ul>
+          <div class="price-row"><span class="old">10€</span><span class="new">5€</span><span class="discount">-50% ΠΡΟΣΦΟΡΑ</span></div>
+          <a class="buy" href="#agora">Θέλω το ebook με 5€ →</a>
+          <div class="micro">Εφάπαξ πληρωμή · Ψηφιακό προϊόν σε μορφή PDF<br>Το κουμπί αγοράς θα συνδεθεί με τον ασφαλή σύνδεσμο πληρωμής σου.</div>
+        </div>
+        <div class="cover-wrap">
+          <img class="cover" src="cover-ebook.png" alt="Εξώφυλλο ebook: 12 συνταγές με κοτόπουλο στο Airfryer">
+          <div class="cover-note">12 συνταγές · Ένα εύκολο ξεκίνημα!</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container center">
+        <h2>Κάνε το καθημερινό μαγείρεμα πιο εύκολο</h2>
+        <p class="section-lead">Αν θέλεις ιδέες για το τι να μαγειρέψεις χωρίς να ψάχνεις κάθε φορά από την αρχή, αυτό το ebook συγκεντρώνει 12 προτάσεις σε ένα πρακτικό αρχείο.</p>
+        <div class="features">
+          <article class="feature"><div class="icon">🍗</div><h3>Ποικιλία στο πιάτο</h3><p>Από τραγανές μπουκιές μέχρι σουβλάκια και ζουμερά μπουτάκια.</p></article>
+          <article class="feature"><div class="icon">⏱️</div><h3>Απλές οδηγίες</h3><p>Ακολούθησε τα βήματα της κάθε συνταγής με οργανωμένο τρόπο.</p></article>
+          <article class="feature"><div class="icon">📱</div><h3>Πάντα διαθέσιμο</h3><p>Άνοιξε το PDF από υπολογιστή, tablet ή κινητό όταν το χρειάζεσαι.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="recipes">
+      <div class="container center">
+        <h2>Τι θα βρεις μέσα</h2>
+        <p class="section-lead">12 ιδέες για να δώσεις περισσότερη ποικιλία στα γεύματά σου.</p>
+        <div class="recipe-grid">
+          <div class="recipe"><strong>01.</strong> Κοτόπουλο με λεμόνι και ρίγανη</div>
+          <div class="recipe"><strong>02.</strong> Σπιτικές κοτομπουκιές</div>
+          <div class="recipe"><strong>03.</strong> Σουβλάκια κοτόπουλου με πιπεριές</div>
+          <div class="recipe"><strong>04.</strong> Φτερούγες με πάπρικα</div>
+          <div class="recipe"><strong>05.</strong> Μπουτάκια με σκόρδο και θυμάρι</div>
+          <div class="recipe"><strong>06.</strong> Κοτόπουλο με κρούστα παρμεζάνας</div>
+          <div class="recipe"><strong>07.</strong> Κοτόπουλο με μέλι και μουστάρδα</div>
+          <div class="recipe"><strong>08.</strong> Πικάντικο κοτόπουλο με καπνιστή πάπρικα</div>
+          <div class="recipe"><strong>09.</strong> Ρολάκια γεμιστού κοτόπουλου</div>
+          <div class="recipe"><strong>10.</strong> Κοτόπουλο με γιαούρτι και κάρι</div>
+          <div class="recipe"><strong>11.</strong> Κεφτεδάκια κοτόπουλου</div>
+          <div class="recipe"><strong>12.</strong> Fajitas κοτόπουλου</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="offer" id="agora">
+      <div class="container">
+        <h2>Απόκτησε και τις 12 συνταγές σήμερα</h2>
+        <p>Η τιμή γνωριμίας είναι <strong>5€ αντί για 10€</strong>. Το ebook διατίθεται ψηφιακά σε PDF.</p>
+        <div class="price-row" style="justify-content:center"><span class="old">10€</span><span class="new">5€</span><span class="discount">-50%</span></div>
+        <!-- Αντικατάστησε το # με τον πραγματικό σύνδεσμο πληρωμής Viva.com ή Stripe. -->
+        <a class="buy" href="mailto:REPLACE-WITH-YOUR-EMAIL?subject=Αγορά%20ebook%20Airfryer%20με%205€">Ενδιαφέρομαι για αγορά →</a>
+        <div class="micro" style="color:#dce7e0">Πριν δημοσιευτεί η σελίδα, σύνδεσε το κουμπί με τον πραγματικό σύνδεσμο πληρωμής.</div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="center">Συχνές ερωτήσεις</h2>
+        <div class="faq">
+          <details><summary>Σε τι μορφή θα είναι το ebook;</summary><p>Σε ψηφιακό αρχείο PDF, για να το ανοίγεις σε συμβατή συσκευή.</p></details>
+          <details><summary>Χρειάζεται να μου σταλεί έντυπο βιβλίο;</summary><p>Όχι. Πρόκειται για ψηφιακό προϊόν και δεν αποστέλλεται έντυπο αντίτυπο.</p></details>
+          <details><summary>Πόσο κοστίζει;</summary><p>Η προωθητική τιμή που εμφανίζεται στη σελίδα είναι 5€, αντί για 10€.</p></details>
+          <details><summary>Πώς θα παραλάβω το PDF;</summary><p>Η διαδικασία αποστολής ή λήψης πρέπει να οριστεί μαζί με τον τρόπο πληρωμής πριν ξεκινήσουν οι πωλήσεις.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <strong>Netcraft Studio</strong><br>
+    Ιδέες που γίνονται αποτελέσματα<br>
+    © 2026 Netcraft Studio. Με επιφύλαξη παντός δικαιώματος.<br>
+    <span>Το προϊόν είναι ψηφιακό ebook συνταγών. Οι χρόνοι μαγειρέματος μπορεί να διαφέρουν ανάλογα με τη συσκευή.</span>
+  </footer>
+</body>
+</html>
